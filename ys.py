@@ -83,7 +83,6 @@ def lsChange(lsNoPut2,lsNoPutAll):
         lsNoPutAll.clear()
         print("\033[0;34;40m{:}\033[0m".format("保底的5星......"))
     fileRem(lsNoPut2)
-    taunt(lsNoPutAll,lsNoPut2)
     return lsNoPut2
 
 def getFileData():
@@ -108,10 +107,4 @@ def OnesGet():
             lsNoPut.append(5)
     return lsNoPut
 
-def taunt(lsChangedNoPut,lsNoPut2):
-    global lsNoPutAll
-    if (lsNoPutAll==80):
-        print("\033[0;34;40m{:}\033[0m".format("保底5星"))
-    if (lsNoPutAll==10 and 5 in lsNoPut2):
-        print("\033[0;34;40m{:}\033[0m".format("NB"))
 main()
